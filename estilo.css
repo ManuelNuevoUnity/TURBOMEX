@@ -1,0 +1,46 @@
+.cars-gallery {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
+    background-color: #f2f2f2;
+}
+
+.car-item {
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+
+.car-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .3s ease-in-out;
+}
+
+.car-item:hover img {
+    transform: scale(1.1);
+}
+
+.car-item h3 {
+    margin: 10px 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.car-item p {
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.car-item-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.car-item-link:hover .car-item {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
